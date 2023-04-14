@@ -1,0 +1,280 @@
+h1 {
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Playfair_SemiBold';
+    font-size: 38px;
+    color: #1C1C1C;
+    margin-bottom: 3rem;
+}
+
+.trending-wrapper {
+    padding: 0px 0px 40px 0px;
+}
+
+h1:before,
+h1:after {
+    background-color: #FFC7D1;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+h2 {
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Playfair_SemiBold';
+    font-size: 38px;
+    color: #1C1C1C;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+h2:before,
+h2:after {
+    background-color: #FFC7D1;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h2:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h2:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.trending-tshirt-grid-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+
+figure.trending-t-shirt {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+figure.trending-t-shirt * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+figure.trending-t-shirt img {
+    max-width: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+figure.trending-t-shirt svg {
+    border-radius: 50%;
+    padding: 13px;
+    color: #770015;
+    width: 50px;
+    height: 50px;
+    line-height: 60px;
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+figure.trending-t-shirt svg:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 26%;
+}
+
+figure.trending-t-shirt svg:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+figure.trending-t-shirt svg:nth-child(4) {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+}
+
+figure.trending-t-shirt a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+
+figure.trending-t-shirt:hover img,
+figure.trending-t-shirt.hover img {
+    opacity: 0.9;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+figure.trending-t-shirt:hover svg,
+figure.trending-t-shirt.hover svg {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    -o-transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: all 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.price-value {
+    font-family: 'Montserrat_Bold';
+    font-size: 18px;
+    letter-spacing: .5px;
+    color: #1C1C1C;
+}
+
+.price-value>span {
+    text-decoration: line-through;
+    font-family: 'Montserrat_Medium';
+    font-size: 12px;
+    color: #FF0000 !important;
+    letter-spacing: .5px;
+    color: #1C1C1C;
+}
+
+.product-description {
+    text-align: center;
+    padding: 0px 60px 0px 60px;
+}
+
+.product-description>p:nth-child(1) {
+    font-family: 'Montserrat_Medium';
+    font-size: 16px;
+    letter-spacing: .5px;
+    color: #1C1C1C;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 1080px) {
+    .product-description {
+        padding: 0px 10px 0px 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .trending-tshirt-grid-row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .trending-tshirt-grid-row {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 10px 0px 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    figure.trending-t-shirt svg {
+        width: 30px;
+        height: 30px;
+        padding: 4px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
+.view-all-btn {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.view-all-btn>button {
+    background-color: #770015;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    border: none;
+    font-family: 'Montserrat_Medium';
+}
+
+.view-all-btn>button:hover {
+    background-color: white;
+    color: #1C1C1C;
+    border: 1px solid #770015;
+}
+
+.product-size {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.product-size>p {
+    border: 1px solid #E6E6E6;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1C1C1C;
+    font-family: 'Montserrat_Medium';
+    letter-spacing: .5px;
+    font-size: 14px;
+}
+
+.product-size>p:hover{
+    background-color: #FF0000;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+    .product-size>p {
+        font-size: 12px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .product-size>p {
+        font-size: 8px;
+        width: 20px;
+        height: 20px;
+    }
+}

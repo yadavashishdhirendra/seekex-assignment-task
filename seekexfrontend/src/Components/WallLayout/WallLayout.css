@@ -1,0 +1,47 @@
+/* 1 of 2 col layout css starts here */
+.baggy-clothers-grid-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+
+.baggy-wrapper {
+    padding: 0px 0px 40px 0px;
+}
+
+
+.baggy-clothers-grid-row>div>img {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 576px) {
+    .baggy-clothers-grid-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* 1 of 2 col layout css ends here */
+
+
+/* 1 of 3 col layout css starts here */
+.deals-grid-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+.deals-grid-row>div>img {
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .deals-grid-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* 1 of 3 col layout css ends here */

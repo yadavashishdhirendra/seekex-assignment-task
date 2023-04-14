@@ -1,0 +1,70 @@
+.blur-card-grid-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 40px 0px 40px 0px;
+    margin-top: 2rem;
+}
+
+.blur-card-grid-row>div{
+    position: relative;
+    top: 0;
+}
+
+.blur-card-grid-row>div>img{
+    width: 100%;
+}
+
+.blur-card-grid-row>div:nth-child(1) {
+    background-color: #06B8A6;
+}
+
+.blur-card-grid-row>div:nth-child(2) {
+    background-color: #80E8FF;
+}
+
+.blur-card-grid-row>div:nth-child(3) {
+    background-color: #DC493A;
+}
+
+.blur-card-grid-row>div:nth-child(4) {
+    background-color: #D7B2FF;
+}
+
+.blur-card-grid-row>div:nth-child(5) {
+    background-color: #F0BC8C;
+}
+
+.blur-card-grid-row>div:nth-child(6) {
+    background-color: #4392F1;
+}
+
+.blur-bg {
+    background: linear-gradient(111.49deg, rgba(255, 255, 255, 0.4) -8.95%, rgba(255, 255, 255, 0.01) 114%);
+    backdrop-filter: blur(32px);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.blur-bg>p{
+    margin-bottom: 0rem;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    font-family: 'Playfair_SemiBold';
+    letter-spacing: .5px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    .blur-card-grid-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .blur-card-grid-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

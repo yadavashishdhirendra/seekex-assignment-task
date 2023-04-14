@@ -1,0 +1,116 @@
+.black-box-wrapper {
+    background-color: #2B2B2B;
+    padding: 5px 10px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    column-gap: 50px;
+}
+
+.header-wrapper>div:nth-child(1)>p {
+    color: white;
+    margin-bottom: 0rem;
+    font-family: 'Montserrat_Medium';
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+.left-hand-side-wrapper>p {
+    color: white;
+    margin-bottom: 0rem;
+    font-family: 'Montserrat_Medium';
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+.left-hand-side-wrapper>svg {
+    font-size: 16px;
+}
+
+.left-hand-side-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.left-hand-side-wrapper>svg {
+    color: white;
+}
+
+@media screen and (max-width: 640px) {
+    .header-wrapper {
+        overflow-x: scroll;
+    }
+}
+
+/* navbar component grid starts here */
+.navbar-expand-wrapper-grid-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 10px 10px 10px 10px;
+}
+
+.navbar-wrapper {
+    background-color: white;
+    box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.16);
+}
+
+.navbar-expand-wrapper-grid-row>div {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-expand-wrapper-grid-row>div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-expand-wrapper-grid-row>div:nth-child(3) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-expand-wrapper-grid-row>div:nth-child(3)>svg {
+    color: #858585;
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+.navbar-expand-wrapper-grid-row>div:nth-child(2)>img {
+    width: 120px;
+}
+
+.navbar-expand-wrapper-grid-row>div:nth-child(1)>img {
+    width: 28px;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-expand-wrapper-grid-row>div:nth-child(2)>img {
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-expand-wrapper-grid-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar-expand-wrapper-grid-row>div:nth-child(3) {
+        display: none;
+    }
+}
+
+/* navbar component grid ends here */

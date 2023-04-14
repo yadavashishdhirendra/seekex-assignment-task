@@ -1,0 +1,98 @@
+footer {
+    padding: 40px 0px 40px 0px;
+    border-top: 1px solid #E0DFDE;
+}
+
+.footer-grid-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.footer-grid-row>div:nth-child(1)>p {
+    font-family: 'Montserrat_Medium';
+    font-size: 16px;
+    letter-spacing: .5px;
+    color: #1C1C1C;
+}
+
+.footer-grid-row>div:nth-child(2)>p:nth-child(1),
+.footer-grid-row>div:nth-child(3)>p:nth-child(1),
+.footer-grid-row>div:nth-child(4)>p:nth-child(1) {
+    color: #770015;
+    font-family: 'Playfair_SemiBold';
+    letter-spacing: .5px;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.footer-grid-row>div:nth-child(2)>p>a,
+.footer-grid-row>div:nth-child(3)>p>a {
+    font-family: 'Montserrat_Medium';
+    font-size: 14px;
+    letter-spacing: .5px;
+    color: #1C1C1C;
+    text-decoration: none;
+}
+
+.footer-grid-row>div:nth-child(2)>p,
+.footer-grid-row>div:nth-child(3)>p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-grid-row>div:nth-child(4)>ul>li>span {
+    font-family: 'Montserrat_Medium';
+    font-size: 14px;
+    letter-spacing: .5px;
+    color: #1C1C1C;
+    text-decoration: none;
+    position: relative;
+    top: -8px;
+}
+
+.footer-grid-row>div:nth-child(4)>ul>li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-grid-row>div:nth-child(1)>a>img{
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .footer-grid-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid-row>div:nth-child(1) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer-grid-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.copyright{
+    background-color: #20050A;
+    padding: 10px 20px;
+    font-family: 'Montserrat_Medium';
+    font-size: 16px;
+    letter-spacing: .5px;
+    text-align: center;
+    margin-bottom: 0rem;
+    color: white;
+}
+
+.location-col>li:nth-child(1){
+    list-style-image: url('../../Assets/Icons/Frame.png');
+}
+
+.location-col>li:nth-child(2){
+    list-style-image: url('../../Assets/Icons/Frame (1).png');
+}
+
+.location-col>li:nth-child(3){
+    list-style-image: url('../../Assets/Icons/call.png');
+}
